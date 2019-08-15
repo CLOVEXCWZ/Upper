@@ -157,6 +157,10 @@ class CharData(object):
 
 
 if __name__ == '__main__':
+
+    if not os.path.exists("data"):
+        os.makedirs("data")
+
     dp = CharData()
     pad_targets_batch, pad_sources_batch, targets_lengths, source_lengths=next(dp.get_batches())
     print(pad_targets_batch.shape)

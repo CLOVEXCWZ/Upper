@@ -39,7 +39,12 @@ def train(log):
             log.info("save model:"+model_save_path+model_name)
 
 
+
 if __name__ == '__main__':
+
+    check_dir()
+
     log=Log(train_log_name)
     train(log)
+
 

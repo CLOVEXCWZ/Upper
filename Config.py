@@ -13,4 +13,11 @@ model_name='tf_seq2seq_upper.ckpt'
 train_log_name='log/train.log'
 
 
-
+def check_dir():
+    import os
+    if not os.path.exists("models"):
+        os.makedirs("models")
+    if not os.path.exists("Log"):
+        os.makedirs("Log")
+    if not os.path.exists("data"):
+        os.makedirs("data")

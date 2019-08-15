@@ -51,10 +51,14 @@ def test(texts, log):
 
 if __name__ == '__main__':
 
+    check_dir()
+
     #  测试texts
     test_texts = ["askcd", "scdokosjdvoih"]
 
     log = Log(train_log_name)
     test(texts=test_texts, log=log)
+
+
 
 
