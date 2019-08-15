@@ -59,5 +59,14 @@ python test.py
 
 
 
+测试结果
+
+```
+输入: ['askcd', 'scdokosjdvoih']
+预测：['ASKCD', 'SCDOKOSJVDOIH']
+```
+
+
+
 
 
